@@ -1,5 +1,121 @@
-<!-- ================= index.html ================= -->
-<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Десерты</title>
+<style>
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto;background:linear-gradient(135deg,#fdfbfb,#ebedee);}
+.container{max-width:420px;margin:20px auto;padding:16px;animation:fadeIn 0.6s ease;}
+.header{font-size:26px;font-weight:700;margin-bottom:20px;}
+.card{display:block;border-radius:20px;overflow:hidden;margin-bottom:16px;text-decoration:none;color:white;position:relative;box-shadow:0 10px 25px rgba(0,0,0,0.15);transition:0.3s;transform:translateY(20px);opacity:0;animation:cardIn 0.6s ease forwards;}
+.card:nth-child(2){animation-delay:0.1s}
+.card:nth-child(3){animation-delay:0.2s}
+.card:nth-child(4){animation-delay:0.3s}
+.card:active{transform:scale(0.96);} 
+.card img{width:100%;height:160px;object-fit:cover;filter:brightness(0.75);transition:0.4s;}
+.card:hover img{transform:scale(1.05);} 
+.card span{position:absolute;bottom:12px;left:16px;font-size:20px;font-weight:600;}
+
+.hero img{width:100%;height:240px;object-fit:cover;animation:zoomIn 0.7s ease;}
+.content{padding:20px;margin-top:-30px;background:white;border-radius:24px 24px 0 0;box-shadow:0 -10px 30px rgba(0,0,0,0.1);animation:slideUp 0.5s ease;}
+.title{font-size:24px;font-weight:700;margin-bottom:10px;}
+.back{text-decoration:none;color:#555;display:inline-block;margin-bottom:10px;transition:0.2s;}
+.back:hover{opacity:0.6;}
+
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes cardIn{to{transform:translateY(0);opacity:1}}
+@keyframes slideUp{from{transform:translateY(40px);opacity:0}to{transform:translateY(0);opacity:1}}
+@keyframes zoomIn{from{transform:scale(1.1)}to{transform:scale(1)}}
+</style>
+</head>
+
+<body>
+<div class="container">
+<div class="header">🍰 Десерты</div>
+<a class="card" href="pavlova.html"><img src="https://images.unsplash.com/photo-1586985289906-406988974504?auto=format&fit=crop&w=800&q=80"><span>Анна Павлова</span></a>
+<a class="card" href="napoleon.html"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80"><span>Наполеон</span></a>
+<a class="card" href="sandwich.html"><img src="https://images.unsplash.com/photo-1553909489-cd47e0ef937f?auto=format&fit=crop&w=800&q=80"><span>Сэндвич</span></a>
+<a class="card" href="caesar.html"><img src="https://images.unsplash.com/photo-1551248429-40975aa4de74?auto=format&fit=crop&w=800&q=80"><span>Цезарь</span></a>
+</div>
+</body>
+</html>
+
+
+
+
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Анна Павлова</title>
+<link rel="stylesheet" href="index.html">
+</head>
+<body>
+<div class="hero"><img src="https://images.unsplash.com/photo-1586985289906-406988974504?auto=format&fit=crop&w=800&q=80"></div>
+<div class="content">
+<a class="back" href="index.html">← Назад</a>
+<div class="title">Анна Павлова</div>
+<p><b>История:</b> Назван в честь балерины Анны Павловой. Символ лёгкости и изящества.</p>
+<p><b>Рецепт:</b> Белки, запекание, сливки и ягоды.</p>
+</div>
+</body>
+</html>
+
+
+
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Наполеон</title>
+</head>
+<body>
+<div class="hero"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80"></div>
+<div class="content">
+<a class="back" href="index.html">← Назад</a>
+<div class="title">Наполеон</div>
+<p><b>История:</b> Связан с Наполеоном и победой 1812 года.</p>
+<p><b>Рецепт:</b> Слои теста и крем.</p>
+</div>
+</body>
+</html>
+
+
+
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сэндвич</title>
+</head>
+<body>
+<div class="hero"><img src="https://images.unsplash.com/photo-1553909489-cd47e0ef937f?auto=format&fit=crop&w=800&q=80"></div>
+<div class="content">
+<a class="back" href="index.html">← Назад</a>
+<div class="title">Сэндвич</div>
+<p><b>История:</b> От графа Сэндвича.</p>
+<p><b>Рецепт:</b> Хлеб и начинка.</p>
+</div>
+</body>
+</html>
+
+
+
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Цезарь</title>
+</head>
+<body>
+<div class="hero"><img src="https://images.unsplash.com/photo-1551248429-40975aa4de74?auto=format&fit=crop&w=800&q=80"></div>
+<div class="content">
+<a class="back" href="index.html">← Назад</a>
+<div class="title">Цезарь</div>
+<p><b>История:</b> От повара Цезаря Кардини.</p>
+<p><b>Рецепт:</b> Романо, соус, сухарики.</p>
+</div>
+</body>
+</html>
+
+
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -27,8 +143,8 @@ body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto;bac
 </html>
 
 
-<!-- ================= pavlova.html ================= -->
-<!DOCTYPE html>
+
+
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -54,8 +170,7 @@ body{margin:0;font-family:-apple-system;background:#f8f8f8;}
 </html>
 
 
-<!-- ================= napoleon.html ================= -->
-<!DOCTYPE html>
+
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -81,8 +196,7 @@ body{margin:0;font-family:-apple-system;background:#f8f8f8;}
 </html>
 
 
-<!-- ================= sandwich.html ================= -->
-<!DOCTYPE html>
+
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -108,8 +222,6 @@ body{margin:0;font-family:-apple-system;background:#f8f8f8;}
 </html>
 
 
-<!-- ================= caesar.html ================= -->
-<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
