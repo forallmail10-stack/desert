@@ -1,0 +1,113 @@
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Маргарита</title>
+<style>
+body {
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+  background:#f5f5f7;
+}
+
+.page {
+  max-width:420px;
+  margin:0 auto;
+}
+
+.hero {
+  width:100%;
+  height:240px;
+  overflow:hidden;
+  position: relative;
+}
+
+.hero img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+  
+  .hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to top, rgba(0,0,0,0.3), transparent);
+}
+
+.content {
+  padding:20px;
+  margin-top:-20px;
+  background:white;
+  border-radius:24px 24px 0 0;
+}
+
+.title {
+  font-size:24px;
+  font-weight:700;
+}
+
+.section {
+  margin-top:16px;
+  line-height:1.5;
+}
+
+.label {
+  font-weight:600;
+}
+
+.back {
+  display:inline-block;
+  margin-bottom:10px;
+  margin-top:10px; /* ВОТ ЭТО ВАЖНО */
+  text-decoration:none;
+  color:#888;
+  font-size:14px;
+}
+  
+  ul {
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+  p {
+  margin-bottom: 12px;
+}
+  
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="hero">
+    <img src="images/margarita.jpg">
+  </div>
+
+  <div class="content">
+    <a class="back" href="index.html">← Назад</a>
+    <div class="title">Пицца "Маргарита"</div>
+
+    <div class="section">
+      <div class="label">История</div>
+      <p>Пицца названа в честь королевы Маргариты Савойской. В 1889 году она посетила Неаполь, и местный пиццайоло Раффаэле Эспозито приготовил для неё три вида пиццы. Особенной королеве понравилась пицца с томатами, моцареллой и базиликом — ингредиенты, символизирующие цвета итальянского флага (красный, белый, зелёный). Пицца получила её имя — «Маргарита».</p>
+        
+        <p>👉 Интересно: Цветовая символика пиццы Маргарита (красный, белый, зелёный) была задумана специально, чтобы подчеркнуть патриотизм и национальные цвета Италии.</p>
+    </div>
+
+    <div class="section">
+      <div class="label">Краткий рецепт</div>
+      <ul>
+        <li>Тесто для пиццы раскатывают, сверху кладут томатный соус, ломтики моцареллы, свежий базилик, немного оливкового масла.</li>
+        <li>Выпекают в духовке при высокой температуре до золотистой корочки.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
